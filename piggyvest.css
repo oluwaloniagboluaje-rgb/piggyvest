@@ -1,0 +1,369 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f7f8 !important;
+  line-height: 1.7;
+  color: #15202d;
+  overflow-x: hidden;
+}
+
+nav {
+  width: 100%;
+  background: #f2f7f8;
+  padding: 20px 32px;
+  border: none;
+}
+
+.nav-link a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #15202d;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.nav-link a:hover {
+  color: #0089ff;
+}
+
+.now,
+.now2 {
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 8px 20px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.now {
+  color: #15202d;
+  background: #fff;
+  border-color: #15202d;
+}
+.now:hover {
+  background: #15202d;
+  color: #fff;
+}
+
+.now2 {
+  color: #fff;
+  background: #122231;
+}
+.now2:hover {
+  background: #0d1823;
+}
+.badge {
+    background-color: #0089ff;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+
+    text-decoration: none;
+}
+
+.badge:hover {
+    background-color: black;
+    text-decoration: none;
+}
+
+.rotate {
+  animation: rotate 6s linear infinite;
+}
+@keyframes rotate {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}
+.col {
+  animation: col 3s ease-in-out infinite alternate;
+}
+@keyframes col {
+  from { transform: translateY(0); }
+  to { transform: translateY(-18px); }
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding: 40px 50px;
+}
+.box1, .box2, .box3, .box4, .box5, .box6 {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  overflow: hidden;
+  transition: background 0.3s, color 0.3s;
+}
+.boxes img {
+  opacity: 0;
+  max-width: 50%;
+  transition: 0.5s ease;
+  transform: translate(200%, 120%);
+}
+
+.box1:hover, .box2:hover, .box3:hover,
+.box4:hover, .box5:hover, .box6:hover {
+  color: #fff;
+}
+.box1:hover { background: #0f60d6; }
+.box2:hover { background: #3296ff; }
+.box3:hover { background: #069b40; }
+.box4:hover { background: #e5288e; }
+.box5:hover { background: #0c1825; }
+.box6:hover { background: #ff783c; }
+
+.box1:hover img, .box2:hover img, .box3:hover img,
+.box4:hover img, .box5:hover img, .box6:hover img {
+  transform: translate(90%);
+  opacity: 1;
+}
+
+.investment-section {
+  background: linear-gradient(90deg, #3b3eff, #6139ff);
+  color: #fff;
+  border-radius: 15px;
+  padding: 50px;
+  margin: 80px auto;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.investment-section h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.investment-section p {
+  max-width: 450px;
+  color: #dcdcdc;
+}
+.investment-section a {
+  color: #dcdcdc;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.investment-box img {
+  width: 380px;
+  position: relative;
+  bottom: -40px;
+}
+
+.phone {
+  max-width: 1200px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+.money {
+  width: 450px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(250,250,252,0.9));
+}
+.content {
+  flex: 1;
+  min-width: 280px;
+}
+.content h1 {
+  font-size: 33px;
+  margin-bottom: 18px;
+}
+.store-buttons .btn {
+  border: 1px solid #e6e9ef;
+  color: #111827;
+  padding: 10px 14px;
+  border-radius: 10px;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.store-buttons .btn:hover {
+  background: #111827;
+  color: #fff;
+}
+
+.featured-section {
+  text-align: center;
+  margin: 70px 0;
+}
+.featured-section h5 {
+  margin-bottom: 30px;
+  color: #444;
+}
+.featured-logos img {
+  height: 40px;
+  margin: 0 25px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.featured-logos img:hover { opacity: 1; }
+
+footer {
+  background: #fff;
+  padding: 80px 20px 40px;
+  text-align: left;
+}
+.footer-column a {
+  display: block;
+  color: #6e7c89;
+  text-decoration: none;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #eaeaea;
+  font-size: 14px;
+}
+
+.img00 { top: 0; left: 0; }
+.img01 { top: 120px; right: 9%; }
+.img02 { top: 330px; right: 9%; }
+.img03 { top: 550px; right: 9%; }
+.img04 { top: 140px; right: 38%; }
+.img05 { top: 280px; right: 38%; }
+.img06 { top: 450px; right: 38%; }
+
+@media (max-width: 992px) {
+  .boxes {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .investment-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .investment-box img {
+    width: 300px;
+    margin-top: 30px;
+  }
+  .phone {
+    flex-direction: column;
+    text-align: center;
+  }
+  .money {
+    width: 100%;
+    max-width: 400px;
+  }
+  .featured-logos img {
+    height: 35px;
+    margin: 10px;
+  }
+}
+@media screen and ( max-width: 1024px){
+    .img01{
+        top: 512px;
+        right: 17%;
+    }
+    .img02{
+        top: 760px;
+        right: 14%;
+    }
+    .img03{
+        top: 913px;
+        right: 16%;
+    }
+    .img04{
+        top: 538px;
+        right: 64%;
+    }
+    .img05{
+        top: 710px;
+        right: 64%;
+    }
+    .img06{
+        top: 848px;
+        right: 61%;
+    }
+    
+}
+@media screen and ( max-width: 768px){
+    .img01{
+        top: 623px;
+        right: 8%;
+    }
+    .img02{
+        top: 866px;
+        right: 5%;
+    }
+    .img03{
+        top: 1053px;
+        right: 8%;
+    }
+    .img04{
+        top: 640px;
+        right: 64%;
+    }
+    .img05{
+        top: 795px;
+        right: 64%;
+    }
+    .img06{
+        top: 970px;
+        right: 64%;
+    }
+
+}
+@media screen and ( max-width: 425px){
+    .img00{
+        width: 100px;
+        position: relative;
+
+    }
+    .img01{
+        width: 180px;
+        top: 618px;
+        right: -18%;
+    }
+    .img02{
+        width: 150px;
+        top: 866px;
+        right: -18%;
+    }
+    .img03{
+        width: 167px;
+        top: 1010px;
+        right: -20%;
+    }
+    .img04{
+        width: 158px;
+        top: 640px;
+        right: 63%;
+    }
+    .img05{
+        width: 154px;
+        top: 795px;
+        right: 64%;
+    }
+    .img06{
+        width: 148px;
+        top: 970px;
+        right: 64%;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+  nav { padding: 15px; text-align: center; }
+  .now, .now2 { display: block; margin: 10px auto; }
+  .boxes { padding: 10px; gap: 16px; }
+  .investment-section { padding: 30px 20px; }
+  .content h1 { font-size: 28px; }
+  .footer-column { margin-bottom: 20px; }
+}

@@ -10,7 +10,7 @@ body {
   background: #f2f7f8 !important;
   line-height: 1.7;
   color: #15202d;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 nav {

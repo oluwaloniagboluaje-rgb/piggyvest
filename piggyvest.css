@@ -266,6 +266,13 @@ footer {
   }
 }
 @media screen and ( max-width: 1024px){
+  .security-section{
+    gap: 61px;
+    justify-content: center;
+
+
+  }
+
     .img01{
         top: 512px;
         right: 17%;

@@ -227,9 +227,13 @@ footer {
 }
 .footer-bottom {
   border-top: 1px solid #eaeaea;
-  font-size: 14px;
+  font-size: 11px;
+  color: #998e97;
 }
-
+.pil{
+  color: #1f65c7;
+  font-size: 11px;
+}
 .img00, .img01, .img02, .img03, .img04, .img05, .img06 {
   position: absolute;
   max-width: 100%;

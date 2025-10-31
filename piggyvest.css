@@ -124,13 +124,22 @@ nav.navbar {
 }
 
 @media (max-width: 576px) {
-  .nav-item.dropdown .dropdown-menu {
-    grid-template-columns: 1fr;
-    width: 100%;
+   .nav-item.dropdown>.dropdown-menu {
+    min-width: 100%;
     left: 0;
     transform: none;
+    padding: 10px;
+  }
+
+  .dropdown-col {
+    width: 100%;
+  }
+
+  .d-flex.flex-wrap {
+    flex-direction: column;
   }
 }
+
 
 
 
